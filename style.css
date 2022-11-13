@@ -1,0 +1,190 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  max-height: 100vh;
+}
+.row {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 2.1rem;
+  font-weight: 200;
+  color: var(--Very-Dark-Blue);
+  /* margin-bottom: 0.2rem; */
+}
+.sub-heading {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--Very-Dark-Blue);
+}
+
+.description {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 35%;
+  text-align: center;
+  color: var(--Grayish-Blue);
+}
+.row:nth-child(2) {
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.col1,
+.col-3 {
+  margin-top: 1rem;
+  width: auto;
+}
+.col-2 {
+  margin: 0rem 2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid var(--Cyan);
+  border-radius: 5px;
+  width: 18rem;
+  height: 14rem;
+  max-width: 16rem;
+  max-height: 11rem;
+  -webkit-box-shadow: 0px 8px 19px -9px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 8px 19px -9px rgba(0, 0, 0, 0.47);
+  box-shadow: 0px 8px 19px -9px rgba(0, 0, 0, 0.47);
+  border: 0.5px solid rgb(243, 241, 241);
+}
+.col-1 .card {
+  border-top: 3px solid var(--Cyan);
+}
+.col-2 .card:nth-child(1) {
+  border-top: 3px solid var(--Red);
+}
+.col-2 .card:nth-child(2) {
+  border-top: 3px solid var(--Orange);
+  margin-top: 1.4rem;
+}
+.col-3 .card {
+  border-top: 3px solid var(--Blue);
+}
+
+.card-heading {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.7rem;
+  padding-top: 1.5rem;
+}
+.card-heading .card--title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--Very-Dark-Blue);
+}
+.card-heading .card--description {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: var(--Very-Dark-Blue);
+  width: 90%;
+  margin-top: 0.5rem;
+}
+.card-icon {
+  align-self: flex-end;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+img {
+  width: 45px;
+  height: 45px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+  color: var(--Very-Dark-Blue);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    /* background-color: lightgreen; */
+  }
+  .row {
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .sub-heading {
+    font-size: 1.5rem;
+    margin-top: 0.4rem;
+  }
+
+  element.style {
+  }
+  .description {
+    margin-top: 0.7rem;
+    font-size: 0.9rem;
+    width: 80%;
+  }
+  .row:nth-child(2) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 100%;
+    /* text-align: center; */
+  }
+  .card {
+    margin: auto;
+    max-width: 19rem;
+    max-height: 13rem;
+    margin-bottom: 1.7rem;
+  }
+  .card-heading .card--title {
+    font-size: 1.5rem;
+  }
+  .card-heading .card--description {
+    font-size: 0.8rem;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 100%;
+    font-size: 11px;
+    text-align: center;
+    color: var(--Very-Dark-Blue);
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  .col1,
+  .col-3 {
+    margin-top: unset;
+  }
+}
